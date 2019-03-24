@@ -25,7 +25,7 @@ void minify(int argc,char **argv){
 	char * s = argv[1];
 	int i;
 	for(i=0;*s;i++){
-		if(*s == dl){
+		if(*s == fileSeparator){
 			lastFileSeparator = i+1;		
 		}
 		if(*s == '.') point = i;
